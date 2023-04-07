@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alta de Estudiante</title>
+    <form id="formulario">
+
+    <div class="form-input">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div class="form-input">
+        <label for="nControl">Numero de Control:</label>
+        <input type="text" id="nControl" name="nControl" required>
+    </div>
+
+    <input type="submit" value="Registrar Estudiante">
+    </form>
+
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background-color: #f5f5f5;
+		}
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 16px;
+			background-color: #007bff; /* Nuevo color de fondo */
+			color: #fff;
+		}
+		h1 {
+			margin: 0;
+			font-size: 24px;
+		}
+		button, a {
+			background-color: #007bff; /* Nuevo color de fondo */
+			color: #fff;
+			border: none;
+			padding: 8px 16px;
+			border-radius: 4px;
+			cursor: pointer;
+			text-decoration: none; /* Nuevo */
+			display: inline-block; /* Nuevo */
+		}
+		button:hover, a:hover {
+			background-color: #0069d9; /* Nuevo color de fondo al pasar el cursor */
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 16px;
+		}
+		.message {
+			background-color: #fff;
+			padding: 16px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+			margin-bottom: 16px;
+			font-size: 18px;
+			line-height: 1.5;
+			color: #333;
+		}
+		.sidebar {
+			background-color: #007bff;
+			color: #fff;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 200px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 16px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+		}
+
+		.sidebar ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.sidebar li {
+			margin-bottom: 16px;
+		}
+
+		.sidebar ul a {
+			border: 2px solid #fff;
+			padding: 8px 16px;
+			border-radius: 4px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 64px;
+		}
+
+		form label {
+			margin-bottom: 8px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #333;
+		}
+
+		form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 8px 18px;
+            margin-bottom: 16px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+
+		form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 16px; /* Nuevo */
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0069d9; /* Nuevo color de fondo al pasar el cursor */
+        }
+        
+        .form-message {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 8px 16px;
+            margin-top: 16px;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .form-message.error {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+            display: block;
+        }
+
+        .form-message.success {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+            display: block;
+        }
+
+	</style>
+  </head>
+  <body>
+    <div class="sidebar">
+        <a href="paginaPrincipal.html">Inicio</a>
+        <a href="altaUsuarios.html">Registrar estudiante</a>
+        <a href="#">Ver estudiantes</a>
+        <a href="#">Editar estudiantes</a>
+    </div>
+  </body>
+</html>

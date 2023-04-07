@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Estudiantes</title>
+</head>
+<body>
+  <h1>Registro de Estudiantes</h1>
+  <form id="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <label for="nControl">Número de Control:</label>
+    <input type="text" id="nControl" name="nControl"><br><br>
+    <button type="submit">Registrar</button>
+  </form>
+  <table id="tabla-estudiantes">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Número de Control</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-estudiantes">
+      <!-- Aquí se mostrarán los estudiantes registrados -->
+    </tbody>
+  </table>
+  <script>
+    // Agrega el objeto estudiantes en el localStorage
+    if (!localStorage.getItem('data')) {
+      const estudiantes = {
+        "estudiantes": []
+      };
+      localStorage.setItem('data', JSON.stringify(estudiantes));
+    }
+  </script>
+  <script src="lista-estudiantes.js"></script>
+</body>
+</html>
